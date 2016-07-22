@@ -81,12 +81,38 @@
 				<li type=2>本科：新生助理班主任、智能车协会团支书、班级学习委员 </li>
 			</ul>
 			</ul>
-			</div>
+			</div>			
 		</fieldset>
 	</section>	
 </article>	
 <!--页尾-->
 <footer>顾**的简历</footer>
 </div>
+<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+	<script type="text/javascript">	         
+		    function textmove(){
+					$("#mottotext").slideUp(3000).slideDown(1000);
+					setTimeout("textmove()",1000);
+			 };
+			textmove();
+			
+		document.write(format(new Date()));
+		function format(date){
+		var week=['日','一','二','三','四','五','六'];
+		var y=date.getFullYear()+"年";
+		var m=date.getMonth()+1+"月";
+		var d=date.getDate()+"日";
+		var w=" 星期"+week[date.getDay()];
+		var h=date.getHours();
+		var am=h>=12?"下午":"上午";
+		h=h>12?h-12:h;
+		h<10?"0"+h:""+h;
+		var mi=date.getMinutes();
+		mi=mi<10?"0"+mi:""+mi;
+		var s=date.getSeconds();
+		s=s<10?"0"+s:""+s;
+		return "<br>"+y+m+d+w+am+h+":"+mi+":"+s;
+		}
+	</script>
 </body>
 </html>
