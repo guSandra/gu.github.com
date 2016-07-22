@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -100,13 +100,13 @@
 			
 		document.write(format(new Date()));
 		function format(date){
-		var week=['ÈÕ','Ò»','¶þ','Èý','ËÄ','Îå','Áù'];
-		var y=date.getFullYear()+"Äê";
-		var m=date.getMonth()+1+"ÔÂ";
-		var d=date.getDate()+"ÈÕ";
-		var w=" ÐÇÆÚ"+week[date.getDay()];
+		var week=['æ—¥','ä¸€','äºŒ','ä¸‰','å››','äº”','å…­'];
+		var y=date.getFullYear()+"å¹´";
+		var m=date.getMonth()+1+"æœˆ";
+		var d=date.getDate()+"æ—¥";
+		var w=" æ˜ŸæœŸ"+week[date.getDay()];
 		var h=date.getHours();
-		var am=h>=12?"ÏÂÎç":"ÉÏÎç";
+		var am=h>=12?"ä¸‹åˆ":"ä¸Šåˆ";
 		h=h>12?h-12:h;
 		h<10?"0"+h:""+h;
 		var mi=date.getMinutes();
